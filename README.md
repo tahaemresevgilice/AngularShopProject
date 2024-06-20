@@ -7,7 +7,7 @@ Son Değişiklik: nav,category ve product componentleri oluşturuldu. product co
 ---
 
 ## Projedeki Teknolojiler
-[![My Skills](https://skillicons.dev/icons?i=bootstrap,html,css,js,ts,angular,npm,dotnet)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=bootstrap,html,css,js,ts,angular,npm)](https://skillicons.dev)
 
 ---
 
