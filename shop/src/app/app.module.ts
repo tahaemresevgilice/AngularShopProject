@@ -9,6 +9,7 @@ import { NavComponent } from './nav/nav.component';
 import { CategotyComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { ProductFilterPipe } from './product/product-filter.pipe';
+import { ProductAddForms1Component } from './product/product-add-forms-1/product-add-forms-1.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProductFilterPipe } from './product/product-filter.pipe';
     NavComponent,
     CategotyComponent,
     ProductComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    ProductAddForms1Component
   ],
   imports: [
     BrowserModule,
