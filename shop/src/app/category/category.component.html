@@ -1,8 +1,6 @@
-<h3>{{title}}</h3>
-<div class="list-group">
-  <a class="list-group-item active">Tüm Ürünler</a>
+<div class="nav-scroller py-1 mb-3 border-bottom">
+  <nav class="nav nav-underline">
+    <a class="nav-item nav-link link-body-emphasis active" routerLink="/products">Tüm Ürünler</a>
+    <a class="nav-item nav-link link-body-emphasis" *ngFor="let category of categories" [routerLink]="['/products/category', category.id]">{{category.name}}</a>
+  </nav>
 </div>
-<div *ngFor="let category of categories" class="list-group">
-  <a class="list-group-item" [routerLink]="['/products/category', category.id]">{{category.name}}</a>
-</div>
-

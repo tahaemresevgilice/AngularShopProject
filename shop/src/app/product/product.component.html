@@ -1,4 +1,5 @@
-<h3 *ngIf="products; else noProduct">{{ title }}</h3>
+<!-- <h3 *ngIf="products; else noProduct">{{ title }}</h3> -->
+<app-category></app-category>
 <div class="mb-3">
   <input type="text" class="form-control" id="productSearch" placeholder="Ürün ara" [(ngModel)]="filterText">
   <strong *ngIf="filterText" class="form-text">{{filterText}} ile ilgili sonuçlar.</strong>
@@ -9,7 +10,7 @@
       Bu Kategoride Ürün Yoktur!
     </div>
   </ng-template>
-  <div *ngFor="let product of products | productFilter:filterText" class="card" style="width: 18rem">
+  <div *ngFor="let product of products | productFilter:filterText" class="card product-box" style="width: 18rem">
     <img [src]="product.imageUrl" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">{{product.name}} - {{product.price | currency:'TRY':true}}</h5>
