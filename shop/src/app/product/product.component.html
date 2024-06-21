@@ -11,7 +11,7 @@
     </div>
   </ng-template>
   <div *ngFor="let product of products | productFilter:filterText" class="card product-box" style="width: 18rem">
-    <img [src]="product.imageUrl" class="card-img-top" alt="..." />
+    <img [src]="product.imageUrl" class="card-img-top img-fluid" alt="..." />
     <div class="card-body">
       <h5 class="card-title">{{product.name}} - {{product.price | currency:'TRY':true}}</h5>
       <p class="card-text">
