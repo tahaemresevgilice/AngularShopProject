@@ -1,3 +1,4 @@
+import { AccountService } from './login/account.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  constructor(private accountService:AccountService){}
   title = 'shop';
+  isLoggedin(){
+    return this.accountService.isLogged();
+  }
+  logOut(){
+    this.accountService.logOut();
+  }
 }

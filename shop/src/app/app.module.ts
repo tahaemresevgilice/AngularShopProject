@@ -1,3 +1,4 @@
+import { LoginGuard } from './login/login.guard';
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
@@ -11,6 +12,9 @@ import { ProductComponent } from './product/product.component';
 import { ProductFilterPipe } from './product/product-filter.pipe';
 import { ProductAddForms1Component } from './product/product-add-forms-1/product-add-forms-1.component';
 import { ProductAddForms2Component } from './product/product-add-forms2/product-add-forms2.component';
+import { LoginComponent } from './login/login.component';
+import { AlertifyService } from './services/alertify.service';
+import { AccountService } from './login/account.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,8 @@ import { ProductAddForms2Component } from './product/product-add-forms2/product-
     ProductComponent,
     ProductFilterPipe,
     ProductAddForms1Component,
-    ProductAddForms2Component
+    ProductAddForms2Component,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +35,7 @@ import { ProductAddForms2Component } from './product/product-add-forms2/product-
     HttpClientModule
   ],
   providers: [
+    AlertifyService,AccountService,LoginGuard,
     provideClientHydration()
   ],
   bootstrap: [AppComponent]

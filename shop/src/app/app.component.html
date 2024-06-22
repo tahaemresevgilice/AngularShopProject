@@ -49,14 +49,20 @@
 <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
   <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">E-Ticaret App</a>
 
-  <ul class="navbar-nav flex-row d-md-none">
+  <ul class="navbar-nav flex-row">
     <li class="nav-item text-nowrap">
-      <button class="nav-link px-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch"
-        aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle search">
+      <a *ngIf="isLoggedin()==false" class="nav-link d-flex align-items-center gap-2" routerLink="/login">
         <svg class="bi">
-          <use xlink:href="#search"></use>
+          <use xlink:href="#cart"></use>
         </svg>
-      </button>
+        Login
+      </a>
+      <a *ngIf="isLoggedin()==true" class="nav-link d-flex align-items-center gap-2" (click)="logOut()">
+        <svg class="bi">
+          <use xlink:href="#cart"></use>
+        </svg>
+        LogOut
+      </a>
     </li>
     <li class="nav-item text-nowrap">
       <button class="nav-link px-3 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
@@ -75,7 +81,7 @@
       <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu"
         aria-labelledby="sidebarMenuLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
+          <h5 class="offcanvas-title" id="sidebarMenuLabel">E-Ticaret App</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
             aria-label="Close"></button>
         </div>
