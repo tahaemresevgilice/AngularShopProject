@@ -3,11 +3,11 @@
 
 Merhaba! Bu Projede Angular kullanarak bir Magaza sitesi projesi ortaya çıkarmaya çalışıyorum.
 
-Son Değişiklik: nav,category ve product componentleri oluşturuldu. product componentinde ürünleri dinamik olarak listelendi ve pipe kullanılarak arama işlemi yapılıyor. cardlardaki sepete ekle butonu dinamik olucak şeilde düzenlendi.
+Proje detaylar: projede veri tabanından gelen ürünlerin listelenmesi eklenmesi yapılıyor ve temel route işlemleri tamamlandı,login ve logut ile ürün ekleme sayafasına erişim sağlanıyor.
 ---
 
 ## Projedeki Teknolojiler
-[![My Skills](https://skillicons.dev/icons?i=bootstrap,html,css,js,ts,angular,npm)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=bootstrap,html,css,js,ts,angular,npm,postman)](https://skillicons.dev)
 
 ---
 
